@@ -125,7 +125,7 @@ resource "aws_ecs_task_definition" "gopale_task" {
   execution_role_arn       = aws_iam_role.gopale_ecs_execution_role.arn
   container_definitions    = jsonencode([{
     name  = "gopale-final-api"
-    image = "515880899753.dkr.ecr.us-east-1其中的.com/gopale-final-api:latest"
+    image = "515880899753.dkr.ecr.us-east-1.com/gopale-final-api:latest"
     portMappings = [{
       containerPort = 5000
       hostPort      = 5000
